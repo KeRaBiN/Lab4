@@ -11,9 +11,9 @@ def calculate_age(birthdate):
     return today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
 
 
-def analyze_employee_data(filename):
+def build_plots(filename):
     try:
-        data = pd.read_csv(filename, parse_dates=['Дата народження'], dayfirst=True)
+        data = pd.read_csv(filename)
         print("Ok, файл CSV відкрито успішно.")
     except FileNotFoundError:
         print(f"Помилка: CSV файл '{filename}' не знайдений.")
