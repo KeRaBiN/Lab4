@@ -63,4 +63,4 @@ def build_plots(filename):
     plt.show()
 
 
-analyze_employee_data(csv_file)
+build_plots(csv_file)
